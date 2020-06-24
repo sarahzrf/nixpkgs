@@ -12,12 +12,12 @@
 
 buildPythonPackage rec {
   pname = "twine";
-  version = "3.1.1";
+  version = "3.2.0";
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "d561a5e511f70275e5a485a6275ff61851c16ffcb3a95a602189161112d9f160";
+    sha256 = "34352fd52ec3b9d29837e6072d5a2a7c6fe4290e97bba46bb8d478b5c598f7ab";
   };
 
   nativeBuildInputs = [ setuptools_scm ];
